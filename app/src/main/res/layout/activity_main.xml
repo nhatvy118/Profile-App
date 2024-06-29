@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FBE2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Card for Profile -->
+    <LinearLayout
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#E8EFCF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_circle"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Huỳnh Phan Nhật Vy"
+            android:textColor="#1A4D2E"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/profileDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Hi, I'm Vy and I'm a undergraduate student at HCMUS."
+            android:textColor="#1A4D2E"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/contactButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/contact_button_text"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <!-- Email Contact Option -->
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileCard"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="vyhuynh@gmail.com"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--Facebook contact-->
+    <LinearLayout
+        android:id="@+id/facebookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/fbIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fb" />
+
+        <TextView
+            android:id="@+id/fbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Vy Huynh"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--Facebook contact-->
+    <LinearLayout
+        android:id="@+id/LinkedinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebookLayout"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/linkedinIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/linkedin" />
+
+        <TextView
+            android:id="@+id/linkedinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Vy Huynh"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinkedinLayout"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/addressIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Quận 10, Hồ Chí Minh, Việt Nam"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
